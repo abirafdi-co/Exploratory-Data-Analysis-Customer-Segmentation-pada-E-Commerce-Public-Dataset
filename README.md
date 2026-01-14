@@ -5,6 +5,7 @@ Exploratory Data Analysis (EDA) dan visualisasi data menggunakan **Streamlit Das
 berdasarkan **E-Commerce Public Dataset (Olist)**.
 
 ## Setup Environment
+```bash
 mkdir proyek_analisis_data  
 cd proyek_analisis_data  
 pipenv install  
