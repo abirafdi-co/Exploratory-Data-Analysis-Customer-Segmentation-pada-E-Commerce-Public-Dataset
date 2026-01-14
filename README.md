@@ -12,5 +12,7 @@ pipenv install
 pipenv shell  
 pip install -r requirements.txt
 
+```
 ## Menjalankan Dashboard Streamlit
+```bash
 streamlit run dashboard.py
