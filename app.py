@@ -29,7 +29,7 @@ st.caption("Dashboard interaktif untuk menampilkan performa penjualan, segmentas
 @st.cache_data
 def load_data():
     df = pd.read_csv(
-        "data/df_final.csv",
+        "data/main_data.csv",
         parse_dates=["order_purchase_timestamp", "order_delivered_customer_date", "order_estimated_delivery_date"],
     )
     return df
@@ -39,7 +39,7 @@ df = load_data()
 # =========================
 # Sidebar Filters
 # =========================
-st.sidebar.header("🔎 Filter")
+st.sidebar.header("Filter")
 
 min_date = df["order_purchase_timestamp"].min().date()
 max_date = df["order_purchase_timestamp"].max().date()
